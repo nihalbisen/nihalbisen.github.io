@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Muli, SemiBold";
+    src: url("../Fonts/muli/Muli-SemiBold.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Muli, Regular";
+    src: url("../Fonts/muli/Muli-Regular.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Muli, Bold";
+    src: url("../Fonts/muli/Muli-Bold.ttf") format("TrueType");
+}
+@font-face{
+    font-family: "Source Serif Pro, Semibold";
+    src: url("../Fonts/source-serif-pro/SourceSerifPro-Semibold.otf") format("OpenType");
+}
+
+@import "./common/all";
+@import "./common/aem-grid-12";
+@import "../Layout/Header/header";
+@import "../Layout/Footer/footer";
+@import "../Components/ProductCards/product-cards";
+@import "../Components/Banner/banner";
+@import "../Components/Sidebar/sidebar";
+@import "../Components/SingleProduct/single-product";
+@import "../Components/Quantity/quantity";
+@import "../Components/Cart/cart";

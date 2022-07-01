@@ -1,0 +1,26 @@
+.quantity{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.quantity > button{
+    color:black;
+    border: 2px solid #B5B8BA;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+.quantity > input{
+    width: 114px;
+    height: 40px;
+    border: 2px solid #91959C;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: "Muli, SemiBold";
+    letter-spacing: 0.32px;
+    line-height: 20px;
+    font-size: 16px;
+    color:#172026;
+}

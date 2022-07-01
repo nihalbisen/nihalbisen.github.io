@@ -1,0 +1,138 @@
+footer{
+  bottom: 0;
+  width: 100%;
+}
+
+//footer-top 
+.footer-top{
+  margin-top: 40px;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  border-top: 2px solid #D1D3D6;
+}
+.footer-top-item{
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.footer-top-title{
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #172026;
+}
+.footer-top-list{
+  list-style-type: none;
+}
+.footer-top-list>li{
+  margin-top: 8px;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #545D63;
+}
+//social icons
+.social-icon{
+  height: 24px;
+  width: auto;
+  margin-right: 26.5px;
+}
+
+//footer bottom
+.footer-bottom{
+    border-top: 1px solid #D1D3D6;
+    padding-top:26px;
+    padding-bottom: 26px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+//logo
+.footer-logo{
+  text-decoration: none;
+}
+.footer-logo>span{
+    text-transform:uppercase;
+    position:relative;
+    color: #172026;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px; 
+}
+
+.footer-logo>span:before{
+    content: attr(data-content);
+    position:absolute;
+    top:0; left:0;
+    width:0.3em;
+    overflow:hidden;
+    color:#3D84FF;
+  }
+
+  //copyright
+  .copyright{
+    font-family: "Muli, Regular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #545D63;
+  }
+  //bottom text
+  .f-bootom-text > li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .f-bootom-text > li > a{
+    color: #172026;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: right;
+    letter-spacing: 0px;
+}
+
+//media querie
+@media screen and (max-width:328px){
+  .footer-bottom{
+    text-align: center;
+  }
+}
+@media screen and (min-width:328px) and (max-width:768px){
+  .footer-bottom{
+    text-align: center;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .footer-top-item {
+    height: 140px;
+  }
+  .footer-bottom{
+    text-align: left;
+  }
+  .f-bootom-text > li {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1280px){
+  .footer-top-item {
+    height: 140px;
+  }
+  .f-bootom-text > li {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width:1280px) and (max-width:1440px){
+  
+}
+@media screen and (min-width:1440px) and (max-width:1920px){
+  
+}
+@media screen and (min-width:1920px){
+  
+}

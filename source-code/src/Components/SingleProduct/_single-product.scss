@@ -1,0 +1,157 @@
+.product-container{
+    margin: 16px;
+}
+.product-img > img{
+    height: 620px;
+    width: 552px;
+    padding: 10px;
+    display: block;
+    margin: 5px auto;   
+}
+.product-img-slide > img{
+    height: 120px;
+    width: 100px;
+    border: 1px solid #91959C;
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+}
+.prod-desc{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.sprod-category{
+    font-family: "Muli, Regular";
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    color:#767B7F;
+}
+.product-title{
+    font-family: "Source Serif Pro, Semibold";
+    text-align: left;
+    font-size: 36px;
+    line-height: 45px;
+    color:#172026;
+    margin-top: 20px;
+}
+.product-price{
+    font-family: "Muli, SemiBold";
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    color:#172026;
+    margin-top:8px;
+}
+.product-description{
+    font-family: "Muli, Regular";
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color:#172026;
+    margin-top:16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #767B7F ;
+}
+.attribute{
+    font-family: "Muli, SemiBold";
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    color:#172026;
+    margin-top: 24px;
+}
+.colors-gr1{
+    background-color: #3D84FF;
+    background-image: url("../Images/Swatch\ 01.png");
+    &::before {
+        border-color: white;
+      }
+}
+.colors-gr2{
+    background-color: #D7373F;
+    background-image: url("../Images/Swatch\ 02.png");
+    &::before {
+        border-color: white;
+      }
+}
+.colors-gr3{
+    background-color: #353C48;
+    background-image: url("../Images/Swatch\ 03.png");
+    &::before {
+        border-color: white;
+      }
+}
+.colors-gr4{
+    background-color: #91959C;
+    background-image: url("../Images/Swatch\ 04.png");
+    &::before {
+        border-color: white;
+      }
+}
+.size-ar > label {
+  display: inline-block;
+  width: 64px;
+  height: 40px;
+  border: solid 2px #91959C;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  font-family: "Muli, SemiBold";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.32px;
+  color:#545D63;
+  padding: 10px 0;
+}
+.size-ar > input[type="radio"] {
+    display: none;
+  }
+  
+.size-ar > input[type="radio"]:checked + label {
+    background-color: #545D63;
+    color:#FFFFFF;
+}
+
+.add-to-cart{
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.add-to-cart > button{
+    height: 40px;
+    width: 318px;
+    background-color: #1F39FF;
+    border-radius: 28px;
+    font-family: "Muli, Bold";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    border: none;
+}
+.product-social{
+    width: 318px;
+    text-align: center;
+}
+
+.product-social > a{
+    text-decoration: none;
+    font-family: "Muli, SemiBold";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    color:#172026;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.product-social > a > img{
+    height: 16px;
+    width: auto;
+}

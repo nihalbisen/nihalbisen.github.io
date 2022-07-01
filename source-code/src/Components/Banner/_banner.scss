@@ -1,0 +1,27 @@
+.banner-container{
+    display: flex;
+    align-items: center;
+}
+.banner-sec1{
+    background-color: #1B252C;
+    padding: 95px 90px; 
+}
+.banner-title{
+    font-family: "Source Serif Pro, Semibold";
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+}
+.divider{
+    border: 4px solid #1F39FF;
+    width: 102px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-sec2> img{
+    width: 100%;
+    height: 320px;
+}
