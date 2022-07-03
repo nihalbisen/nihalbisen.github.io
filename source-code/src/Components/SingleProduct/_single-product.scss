@@ -34,6 +34,7 @@
     line-height: 45px;
     color:#172026;
     margin-top: 20px;
+    margin-bottom: 16px;
 }
 .product-price{
     font-family: "Muli, SemiBold";
@@ -157,3 +158,122 @@
     height: 16px;
     width: auto;
 }
+.sprod-bottom{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#desc-title{
+    font-family: "Muli, SemiBold";
+    font-size: 20px;
+    line-height: 25px;
+    color:#172026;
+    text-align: left;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+.desc-bottom{
+    font-family: "Muli, Regular";
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color:#172026;
+    margin-top:16px;
+    padding-bottom: 16px;
+}
+.bottom-div{
+    border: 4px solid #1F39FF;
+    width: 102px;
+    margin-top: 10px;
+    margin-left: 0;
+   
+}
+.bottom-sidecol{
+    padding-left: 34px;
+}
+.details-icon{
+    width: 100%;
+    margin-top: 16px;
+}
+.details-icon > span{
+    width: 50%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.details-icon > span > img{
+    margin-right: 8px;
+}
+
+//media querie
+@media screen and (max-width:328px){
+    .product-img > img {
+        height: 360px;
+        width: 240px;
+    }
+    .prod-desc{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .add-to-cart > button {
+        width: 240px;
+    }
+    .product-social {
+        text-align: left;
+    }
+    .bottom-sidecol {
+        padding-left: 0px;
+    }
+}
+@media screen and (min-width:328px) and (max-width:768px){
+    .product-img > img {
+        height: 360px;
+        width: 240px;
+    }
+    .prod-desc{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .add-to-cart > button {
+        width: 240px;
+    }
+    .product-social {
+        text-align: left;
+    }
+    .bottom-sidecol {
+        padding-left: 0px;
+    }
+    
+    }
+  @media screen and (min-width:768px) and (max-width:1024px){
+    .product-img > img {
+        height: 400px;
+        width: 340px;
+    }
+    .prod-desc{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .add-to-cart > button {
+        width: 300px;
+    }
+    .product-social {
+        text-align: center;
+    }
+    .bottom-sidecol {
+        padding-left: 0px;
+    }
+      
+    }
+  @media screen and (min-width:1024px) and (max-width:1280px){
+     
+      
+    }
+  @media screen and (min-width:1280px) and (max-width:1440px){
+     
+    }
+  @media screen and (min-width:1440px) and (max-width:1920px){
+      
+    }
+  @media screen and (min-width:1920px){
+     
+    }
