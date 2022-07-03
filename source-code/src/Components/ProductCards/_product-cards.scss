@@ -27,6 +27,9 @@
     border: 2px solid #B5B7BC;
     float: right;
     margin-right: 16px;
+    font-family: "Muli, Regular";
+    font-size: 16px;
+    color:#172026;
 }
 .sorting> option{
     font-size: 16px;
@@ -108,3 +111,35 @@
 .paginationDisabled a {
   display: none;
 }
+
+
+//media querie
+@media screen and (max-width:328px){
+    .sorting { 
+        width: 140px;
+    }
+  
+    }
+  @media screen and (min-width:328px) and (max-width:768px){
+    .sorting { 
+        width: 180px;
+    }
+  
+    }
+  @media screen and (min-width:768px) and (max-width:1024px){
+      
+      
+    }
+  @media screen and (min-width:1024px) and (max-width:1280px){
+      
+      
+    }
+  @media screen and (min-width:1280px) and (max-width:1440px){
+     
+    }
+  @media screen and (min-width:1440px) and (max-width:1920px){
+     
+    }
+  @media screen and (min-width:1920px){
+     
+    }

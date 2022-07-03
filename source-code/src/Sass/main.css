@@ -5236,12 +5236,145 @@ header {
           flex-direction: column;
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #FFFFFF;
+  /* white*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav > a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #172026;
+  font-family: "Muli, Regular";
+  text-align: left;
+  line-height: 24px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #B5B7BC;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.sidenav-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  border-top: 1px solid #B5B7BC;
+  padding-top: 16px;
+}
+
+.sidenav-bottom > a {
+  position: relative;
+  padding-bottom: 16px;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #172026;
+  text-decoration: none;
+}
+
+.sidenav-bottom > a > img {
+  width: 16.75px;
+  height: 16.75px;
+  margin-right: 5px;
+}
+
+.sidenav-bottom > a:first-of-type {
+  width: 50%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 16px;
+}
+
+.sidenav-bottom > a:last-of-type {
+  width: 50%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 16px;
+  text-decoration: underline;
+}
+
+.sidenav > .cat-head {
+  font-family: "Muli, SemiBold";
+  line-height: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+  cursor: pointer;
+}
+
+#drawer-menu {
+  cursor: pointer;
+  width: 18px;
+  height: 12px;
+}
+
 @media screen and (max-width: 328px) {
   .side-menu > li > a > span {
     display: none;
   }
   #user {
     display: none;
+  }
+  .logo {
+    margin-left: 25px;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 16px;
   }
 }
 
@@ -5251,6 +5384,15 @@ header {
   }
   #user {
     display: none;
+  }
+  .logo {
+    margin-left: 25px;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 16px;
   }
 }
 
@@ -5263,12 +5405,36 @@ header {
     margin-left: 8px;
     margin-right: 8px;
   }
+  #drawer-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .menu > li {
     margin-left: 15px;
     margin-right: 15px;
+  }
+  #drawer-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  #drawer-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  #drawer-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #drawer-menu {
+    display: none;
   }
 }
 
@@ -5437,6 +5603,9 @@ footer {
   border: 2px solid #B5B7BC;
   float: right;
   margin-right: 16px;
+  font-family: "Muli, Regular";
+  font-size: 16px;
+  color: #172026;
 }
 
 .sorting > option {
@@ -5529,6 +5698,18 @@ footer {
 
 .paginationDisabled a {
   display: none;
+}
+
+@media screen and (max-width: 328px) {
+  .sorting {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 328px) and (max-width: 768px) {
+  .sorting {
+    width: 180px;
+  }
 }
 
 .banner-container {
@@ -5796,6 +5977,7 @@ footer {
   line-height: 30px;
   color: #172026;
   margin-top: 8px;
+  display: block;
 }
 
 .product-description {
@@ -5903,6 +6085,7 @@ footer {
   color: #FFFFFF;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .product-social {
