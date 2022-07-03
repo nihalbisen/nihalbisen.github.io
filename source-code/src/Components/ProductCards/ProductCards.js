@@ -65,7 +65,7 @@ export default function ProductCards(props) {
               .map((product) => {
                 return (
                   <>
-                    <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--10">
+                    <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12">
                       <div className="prod-image">
                         <a onClick={() => { fetchProduct(product.id) }} href="#/product"><img src={product.image} alt={product.title} /></a>
                       </div>
@@ -84,7 +84,7 @@ export default function ProductCards(props) {
                 .map((product) => {
                   return (
                     <>
-                      <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--10">
+                      <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12">
                         <div className="prod-image">
                           <a onClick={() => { fetchProduct(product.id) }} href="#/product"><img src={product.image} alt={product.title} /></a>
                         </div>
