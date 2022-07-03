@@ -5747,6 +5747,74 @@ footer {
   height: 320px;
 }
 
+@media screen and (max-width: 328px) {
+  .banner-container {
+    display: block;
+  }
+  .banner-sec2 > img {
+    width: 100vw;
+    height: auto;
+  }
+  .banner-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .banner-sec3 {
+    background-color: #1B252C;
+    padding: 14px 0px;
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 328px) and (max-width: 768px) {
+  .banner-container {
+    display: block;
+  }
+  .banner-sec2 > img {
+    width: 100vw;
+    height: auto;
+  }
+  .banner-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .banner-sec3 {
+    background-color: #1B252C;
+    padding: 14px 0px;
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-sec3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .banner-sec3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .banner-sec3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .banner-sec3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .banner-sec2 {
+    display: none;
+  }
+}
+
 .filter-category {
   font-family: "Muli, Regular";
   font-size: 16px;
