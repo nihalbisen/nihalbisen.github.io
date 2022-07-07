@@ -9,7 +9,7 @@ export default function Banner(){
             <div className="banner-sec2 aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
                 <img src={WomensOuterwear} alt="Women's Outerwear"/>
             </div>
-            <div className="banner-sec3 aem-GridColumn aem-GridColumn--phone--12 ">
+            <div className="banner-sec3 aem-GridColumn aem-GridColumn--phone--11 ">
                 <h3 className="banner-title">Women's<br/>Outerwear</h3>
                 <hr className="divider"/>
             </div>

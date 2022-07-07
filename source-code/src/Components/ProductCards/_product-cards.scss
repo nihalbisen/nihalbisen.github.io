@@ -118,11 +118,34 @@
     .sorting { 
         width: 140px;
     }
-  
+    .prod-image>a>img {
+      height: 120px;
+      width: 80px;
+    }
+    .products-grid {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .prod-items {
+      height: 355px;
+    }
+    
+
     }
   @media screen and (min-width:328px) and (max-width:768px){
     .sorting { 
         width: 180px;
+    }
+    .prod-image>a>img {
+      height: 144px;
+      width: 96px;
+    }
+    .prod-items {
+      height: 355px;
+    }
+    .products-grid {
+      padding-right: 0px;
+      padding-left: 0px;
     }
   
     }
