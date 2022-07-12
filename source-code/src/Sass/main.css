@@ -5574,6 +5574,14 @@ footer {
   }
 }
 
+.loader {
+  text-align: center;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Muli, Bold";
+  color: #172026;
+}
+
 .products-grid {
   margin-top: 32px;
   margin-bottom: 128px;

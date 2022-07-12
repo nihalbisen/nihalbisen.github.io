@@ -60,7 +60,8 @@ export default function ProductCards(props) {
               </select>
             </form>
           </div>
-          
+          { props.data>=0 ? (<span className="loader">Content is loading...</span>):(
+          <>
           {  prodData.length !== 0 ? (
             
             prodData
@@ -115,6 +116,8 @@ export default function ProductCards(props) {
             disabledClassName={"paginationDisabled"}
             activeClassName={"paginationActive"}
           />
+          
+          </>)}
         </div>
       </section>
     </>

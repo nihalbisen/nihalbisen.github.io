@@ -3,7 +3,8 @@ import ProductCards from "./ProductCards";
 
 export default function Products(){
     const [initialDataCat, setDataCat] = useState([]);
-
+    
+    
     useEffect(() => {
         fetch("https://fakestoreapi.com/products")
         .then((res) => res.json())
@@ -11,6 +12,10 @@ export default function Products(){
     }, []);
     // console.log(initialDataCat)
     return(
-        <ProductCards data={initialDataCat}/>
+        <>
+            <ProductCards data={initialDataCat} />
+            
+        </>
     );
+    
 }
