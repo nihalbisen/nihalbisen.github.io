@@ -6,7 +6,7 @@ export default function Footer(){
         <footer>
             <section className="footer-top aem-Grid aem-Grid--12">
                 <div className="footer-top-item aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                    <h5 className="footer-top-title">Account</h5>
+                    <h4 className="footer-top-title">Account</h4>
                     <ul className="footer-top-list">
                         <li>Sign In</li>
                         <li>Register</li>
@@ -14,14 +14,14 @@ export default function Footer(){
                     </ul>
                 </div>
                 <div className="footer-top-item aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                    <h5 className="footer-top-title">About Us</h5>
+                    <h4 className="footer-top-title">About Us</h4>
                     <ul className="footer-top-list">
                         <li>Our Story</li>
                         <li>Careers</li>
                     </ul>
                 </div>
                 <div className="footer-top-item aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                    <h5 className="footer-top-title">Help</h5>
+                    <h4 className="footer-top-title">Help</h4>
                     <ul className="footer-top-list">
                         <li>Contact Us</li>
                         <li>Order Status</li>
@@ -29,7 +29,7 @@ export default function Footer(){
                     </ul>
                 </div>
                 <div className="footer-top-item aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--6 aem-GridColumn--phone--12">
-                    <h5 className="footer-top-title">Follow Us!</h5>
+                    <h4 className="footer-top-title">Follow Us!</h4>
                     <ul className="footer-top-list">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</li>
                         <li>

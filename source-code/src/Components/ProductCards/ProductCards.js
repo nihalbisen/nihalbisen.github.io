@@ -51,11 +51,14 @@ export default function ProductCards(props) {
             <span className="result-count">{props.data.length} Results</span>
           </div>
           <div className="aem-GridColumn aem-GridColumn--default--6">
-            <select className="sorting" onChange={sortByPrice}>
-              <option value="latest">Sort by Latest</option>
-              <option value="hightolow">Price: High to Low</option>
-              <option value="lowtohigh">Price: Low to High</option>
-            </select>
+            <form className="sorting">
+              <label htmlFor="sorting">Sort by: </label>
+              <select onChange={sortByPrice} id="sorting">
+                <option value="latest">Latest</option>
+                <option value="hightolow">Price: High to Low</option>
+                <option value="lowtohigh">Price: Low to High</option>
+              </select>
+            </form>
           </div>
           
           {  prodData.length !== 0 ? (

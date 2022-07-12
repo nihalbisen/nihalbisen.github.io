@@ -5597,11 +5597,21 @@ footer {
 }
 
 .sorting {
+  float: right;
+}
+
+.sorting > label {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Muli, SemiBold";
+  color: #172026;
+}
+
+.sorting > select {
   height: 44px;
   width: 254px;
   border-radius: 8px;
   border: 2px solid #B5B7BC;
-  float: right;
   margin-right: 16px;
   font-family: "Muli, Regular";
   font-size: 16px;
@@ -5701,8 +5711,8 @@ footer {
 }
 
 @media screen and (max-width: 328px) {
-  .sorting {
-    width: 140px;
+  .sorting > select {
+    width: 120px;
   }
   .prod-image > a > img {
     height: 120px;
@@ -5718,8 +5728,8 @@ footer {
 }
 
 @media screen and (min-width: 328px) and (max-width: 768px) {
-  .sorting {
-    width: 180px;
+  .sorting > select {
+    width: 140px;
   }
   .prod-image > a > img {
     height: 144px;
@@ -5836,7 +5846,7 @@ footer {
 }
 
 @media screen and (min-width: 1920px) {
-  .banner-sec2 {
+  .banner-sec3cd {
     display: none;
   }
 }
