@@ -5575,11 +5575,11 @@ footer {
 }
 
 .loader {
-  text-align: center;
-  font-size: 24px;
-  line-height: 35px;
-  font-family: "Muli, Bold";
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Muli, SemiBold";
   color: #172026;
+  margin: 10px 16px;
 }
 
 .products-grid {
