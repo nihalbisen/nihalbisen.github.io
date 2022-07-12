@@ -31,6 +31,8 @@ export default function SingleProduct(){
 
     return(
         <>
+        { DataProd>=0 ? (<span className="loader">Content is loading...</span>):(
+            <>
         <section className="aem-Grid aem-Grid--12">
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 aem-GridColumn--tablet--6 aem-Grid aem-Grid--12">
                 <div className="product-img-slide aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide aem-GridColumn--tablet--hide">
@@ -102,7 +104,9 @@ export default function SingleProduct(){
                     <span><img src={nylon} alt="nylon"/>69% nylon, 31% lycra</span>
                 </div>
             </div>
-        </section>  
+        </section> 
+        </>
+        )} 
         </>
     );
     
