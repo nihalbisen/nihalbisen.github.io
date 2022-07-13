@@ -5779,6 +5779,7 @@ footer {
   width: 102px;
   margin-top: 32px;
   margin-left: auto;
+  margin-bottom: 0px;
   margin-right: auto;
 }
 
@@ -6376,8 +6377,8 @@ footer {
 .cart-head > h2 {
   font-family: "Source Serif Pro, Semibold";
   font-size: 48px;
+  line-height: 60px;
   text-align: center;
-  line-height: 45px;
   color: #172026;
 }
 
@@ -6386,6 +6387,7 @@ footer {
   width: 102px;
   margin-top: 10px;
   margin-left: auto;
+  margin-bottom: 0px;
   margin-right: auto;
 }
 

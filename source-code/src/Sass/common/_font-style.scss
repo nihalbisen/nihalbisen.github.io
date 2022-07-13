@@ -1,0 +1,7 @@
+@mixin typo($family, $size, $height, $align, $color){
+    font-family: $family;
+    font-size: $size;
+    line-height: $height;
+    text-align: $align;
+    color: $color;
+}

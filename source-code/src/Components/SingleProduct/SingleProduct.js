@@ -25,7 +25,7 @@ export default function SingleProduct(){
     
 
     const handleAddToCart = (product) =>{
-        dispatch(addToCart(product));
+        dispatch(addToCart(product)); 
        
     }
 

@@ -1,0 +1,8 @@
+@mixin divider($top, $left, $bottom, $right){
+    border: 4px solid #1F39FF;
+    width: 102px;
+    margin-top: $top;
+    margin-left: $left;
+    margin-bottom: $bottom;
+    margin-right: $right;
+}

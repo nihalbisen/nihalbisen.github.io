@@ -1,3 +1,11 @@
+@mixin sec-3 ($left, $right){
+    background-color: #1B252C;
+    padding: 14px 0px;
+    margin-top: -25px;
+    margin-left: $left;
+    margin-right: $right;
+}
+
 .banner-container{
     display: flex;
     align-items: center;
@@ -7,18 +15,12 @@
     padding: 95px 90px; 
 }
 .banner-title{
-    font-family: "Source Serif Pro, Semibold";
-    font-size: 48px;
-    line-height: 60px;
-    text-align: center;
-    color: white;
+    // typo(font-family, font-size, line-height, text-align, color)
+    @include typo("Source Serif Pro, Semibold", 48px, 60px, center, white);
 }
 .divider{
-    border: 4px solid #1F39FF;
-    width: 102px;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    // divider(margin-top, margin-left, margin-bottom, margin-right)
+    @include divider(32px, auto, 0px, auto);
 }
 
 .banner-sec2> img{
@@ -39,11 +41,8 @@
         line-height: 42px;
     }
     .banner-sec3 {
-        background-color: #1B252C;
-        padding: 14px 0px;
-        margin-top: -25px;
-        margin-left: 10px;
-        margin-right: 10px;
+        // sec-3(margin-left, margin-right)
+        @include sec-3(10px, 10px);
     }
 }
 @media screen and (min-width:328px) and (max-width:768px) {
@@ -59,11 +58,8 @@
         line-height: 42px;
     }
     .banner-sec3 {
-        background-color: #1B252C;
-        padding: 14px 0px;
-        margin-top: -25px;
-        margin-left: 15px;
-        margin-right: 15px;
+        // sec-3(margin-left, margin-right)
+        @include sec-3(15px, 15px);
     }
 }
 
