@@ -1,8 +1,7 @@
 import { useSelector, useDispatch } from "react-redux/es/exports";
 import { decreaseCart, addToCart, getTotals, removeFromCart } from "./cartSlice";
 import { useEffect, useState } from "react";
-import { bindActionCreators } from "redux";
-import { actionCreators } from "../../state/index";
+import { useNavigate } from "react-router-dom";
 import trash from "../../Images/trash-2.png";
 import save from "../../Images/heart.png";
 import edit from "../../Images/edit-2.png";
@@ -14,7 +13,7 @@ export default function Cart() {
     const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
     
-    const { fetchProduct } = bindActionCreators(actionCreators, dispatch);
+    
 
     useEffect(() => {
         dispatch(getTotals());
@@ -38,6 +37,8 @@ export default function Cart() {
         .then((data) => setProd(data));
          // eslint-disable-next-line
     }, []);
+
+    let navigate = useNavigate();
 
     return (
         <>
@@ -135,9 +136,9 @@ export default function Cart() {
                   return (
                 <div key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--4 aem-GridColumn--phone--10">
                     <div className="prod-image">
-                        <a onClick={() => { fetchProduct(product.id) }} href="#/product"><img src={product.image} alt={product.title} /></a>
+                    <img src={product.image} alt={product.title} onClick={() => { navigate("product/" + product.id) }}/>
                     </div>
-                    <a className="prod-title" onClick={() => { fetchProduct(product.id) }} href="#/product">{product.title}</a>
+                    <span className="prod-title" onClick={() => { navigate("product/" + product.id) }} >{product.title}</span>
                     <span className="prod-price">${product.price}</span>
                     <img className="fav-prod" src={fav} alt="add favorite" />
                 </div>

@@ -65,7 +65,7 @@ export default function ProductCards(props) {
             prodData
               .slice(pagesVisited, pagesVisited + productPerPage)
               .map((product) => {
-                return (
+                return ( 
                   <>
                     <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
                       <div className="prod-image">

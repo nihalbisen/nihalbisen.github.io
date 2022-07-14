@@ -26,7 +26,7 @@ export default function Sidebar(){
             </div>
             <div className="attribute-sec">
                 <h4 className="attribute-title">Color</h4>
-                <input className="colors colors-black" id="black" type="checkbox"  name="black" value="black"/>
+                <input className="colors colors-black" type="checkbox"  name="black" value="black"/>
                 <input className="colors colors-white" type="checkbox"  name="white" value="white"/>
                 <input className="colors colors-green" type="checkbox"  name="black" value="black"/>
                 <input className="colors colors-orange" type="checkbox"  name="white" value="white"/>
