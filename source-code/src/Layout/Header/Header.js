@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import drawer from "../../Images/align-justify.png";
 
 export default function Header(){
-    const { cartTotalQuantity } = useSelector((state) => state.cart);
+    let { cartTotalQuantity } = useSelector((state) => state.cart);
 
     const openNav = () =>{
         document.getElementById("mySidenav").style.width = "100%";
@@ -22,8 +22,8 @@ export default function Header(){
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--2 aem-GridColumn--phone--8">
                     <div id="mySidenav" class="sidenav">
                         <span class="closebtn" onClick={closeNav} >&times;</span>
-                        <a href="#/home" className="cat-head" aria-label="shop-categories">Shop Categories</a>
-                        <a href="#/home" aria-label="women">Women</a>
+                        <a href="/" className="cat-head" aria-label="shop-categories">Shop Categories</a>
+                        <a href="/" aria-label="women">Women</a>
                         <a href="/" aria-label="men">Men</a>
                         <a href="/" aria-label="smart-gear">Smart Gear</a>
                         <a href="/" aria-label="accessories">Accessories</a>
@@ -38,14 +38,14 @@ export default function Header(){
                     <img src={drawer} alt="drawer menu" onClick={openNav} id="drawer-menu"/>
                 
                 
-                <a href="#/home" aria-label="Home" className="logo">
+                <a href="/" aria-label="Home" className="logo">
                     <span data-content="VENIA">VENIA</span>
                 </a>
             </div>
             
             <nav role="navigation" aria-label="Main" className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--5 aem-GridColumn--phone--hide">
                 <ul className="menu">
-                    <li><a href="#/home" aria-label="Women">Women</a></li>
+                    <li><a href="/" aria-label="Women">Women</a></li>
                     <li><a href="/" aria-label="Men">Men</a></li>
                     <li><a href="/" aria-label="Smart Gear">Smart Gear</a></li>
                     <li><a href="/" aria-label="Accessories">Accessories</a></li>

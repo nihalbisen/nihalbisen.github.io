@@ -11,10 +11,10 @@ export default function Menu(){
           <HashRouter>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='home' element={<Home />} />
+              <Route path='/' element={<Home />} />
               <Route path='cart' element={<Cart />} />
               {/* <Route path='product' element={<SingleProduct />} /> */}
-              <Route path='product' element={<SingleProduct/>} />
+              <Route path='product/:id' element={<SingleProduct/>} />
               <Route path='/*' element={<PageNotFound />} />
             </Routes>
           </HashRouter>

@@ -65,14 +65,14 @@ export default function Cart() {
                                         <img className="cart-prod-img" src={cartItem.image} alt={cartItem.title} />
                                     </div>
                                     <div className="cart-prod-desc aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
-                                        <h4>{cartItem.title}</h4>
+                                        <h3>{cartItem.title}</h3>
                                         <span>Size : Medium</span>
                                         <span>Color : Storm</span>
                                         <span>${cartItem.price * cartItem.cartQuantity}</span>
                                     </div>
                                     <div className="quantity aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
                                         <button type="button" onClick={() => handelDecreaseCart(cartItem)}>-</button>
-                                        <input type="text" value={cartItem.cartQuantity} />
+                                        <input type="text" value={cartItem.cartQuantity} name="cart-quantity"/>
                                         <button type="button" onClick={() => handleIncreaseCart(cartItem)}>+</button>
                                     </div>
                                     <div className="cart-buttons aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
@@ -130,7 +130,7 @@ export default function Cart() {
 
         {/* recently view product */}
         <section className="aem-Grid aem-Grid--12 recent">
-            <h3 className="recent-head">Recently Viewed</h3>
+            <h4 className="recent-head">Recently Viewed</h4>
             {Prod.map((product) => {
                   return (
                 <div key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--4 aem-GridColumn--phone--10">

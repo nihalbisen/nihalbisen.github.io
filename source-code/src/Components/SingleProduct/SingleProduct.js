@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useSelector,useDispatch } from "react-redux/es/exports";
+import { useDispatch } from "react-redux/es/exports";
+import { useParams } from "react-router-dom";
 import Quantity from "../Quantity/Quantity";
 import { addToCart } from "../Cart/cartSlice";
 import save from "../../Images/heart.png";
@@ -11,11 +12,11 @@ import breathable from "../../Images/breathable.png";
 
 
 export default function SingleProduct(){
-    const productId = useSelector(state => state.fetchedid);
     const [DataProd, setDataProd] = useState([]);
+    const id = useParams().id;
     
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/${productId}`)
+        fetch(`https://fakestoreapi.com/products/${id}`)
         .then((res) => res.json())
         .then((data) => setDataProd(data));
          // eslint-disable-next-line

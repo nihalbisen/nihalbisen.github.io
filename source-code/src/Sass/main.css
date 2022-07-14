@@ -5639,11 +5639,12 @@ footer {
   border: 1px solid #B5B7BC;
 }
 
-.prod-image > a > img {
+.prod-image > img {
   height: 251px;
   width: 204px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .prod-title {
@@ -5655,7 +5656,7 @@ footer {
   font-weight: 700;
   margin-top: 8px;
   display: block;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .prod-price {
@@ -5722,7 +5723,7 @@ footer {
   .sorting > select {
     width: 120px;
   }
-  .prod-image > a > img {
+  .prod-image > img {
     height: 120px;
     width: 80px;
   }
@@ -5739,7 +5740,7 @@ footer {
   .sorting > select {
     width: 140px;
   }
-  .prod-image > a > img {
+  .prod-image > img {
     height: 144px;
     width: 96px;
   }
@@ -6071,7 +6072,7 @@ footer {
   font-size: 14px;
   text-align: left;
   line-height: 20px;
-  color: #767B7F;
+  color: #172026;
 }
 
 .product-title {
@@ -6391,14 +6392,11 @@ footer {
   margin-right: auto;
 }
 
-.cart-empty {
-  text-align: center;
-}
-
 .cart-empty > p {
   font-family: "Muli, Regular";
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   color: #172026;
 }
 
@@ -6406,6 +6404,7 @@ footer {
   font-family: "Muli, Regular";
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #172026;
   text-decoration: none;
   display: -webkit-box;
@@ -6480,6 +6479,7 @@ footer {
   font-family: "Muli, Regular";
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
   color: #172026;
 }
 
@@ -6492,8 +6492,8 @@ footer {
 .pricing-summary > h4 {
   font-family: "Muli, SemiBold";
   font-size: 20px;
-  text-align: left;
   line-height: 25px;
+  text-align: left;
   color: #172026;
 }
 
@@ -6650,8 +6650,8 @@ footer {
   font-family: "Muli, Regular";
   font-size: 14px;
   line-height: 21px;
-  color: #172026;
   text-align: left;
+  color: #172026;
 }
 
 .recent {

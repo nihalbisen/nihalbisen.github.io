@@ -1,18 +1,14 @@
-import { useDispatch } from "react-redux";
-import { bindActionCreators } from "redux";
-import { actionCreators } from "../../state/index";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import fav from "../../Images/heart.png";
 import Banner from "../Banner/Banner";
 import Sidebar from "../Sidebar/Sidebar";
 import ReactPaginate from "react-paginate";
 
 export default function ProductCards(props) {
-  const dispatch = useDispatch();
-  const { fetchProduct } = bindActionCreators(actionCreators, dispatch);
   const [pageNumber, setPageNumber] = useState(0);
 
-  const productPerPage = 9;
+  const productPerPage = 9; 
   const pagesVisited = pageNumber * productPerPage;
   // eslint-disable-next-line
   const [prodData, setData] = useState([]);
@@ -38,6 +34,8 @@ export default function ProductCards(props) {
     }
   }
   
+  let navigate = useNavigate();
+
   
   return (
     <>
@@ -71,9 +69,9 @@ export default function ProductCards(props) {
                   <>
                     <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
                       <div className="prod-image">
-                        <a onClick={() => { fetchProduct(product.id) }} href="#/product"><img src={product.image} alt={product.title} /></a>
+                        <img src={product.image} alt={product.title} onClick={() => { navigate("product/" + product.id) }}/>
                       </div>
-                      <a className="prod-title" onClick={() => { fetchProduct(product.id) }} href="#/product">{product.title}</a>
+                      <span className="prod-title" onClick={() => { navigate("product/" + product.id) }} >{product.title}</span>
                       <span className="prod-price">${product.price}</span>
                       <img className="fav-prod" src={fav} alt="add favorite" />
                     </section>
@@ -90,9 +88,9 @@ export default function ProductCards(props) {
                     <>
                       <section key={product.id} className="prod-items aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--6">
                         <div className="prod-image">
-                          <a onClick={() => { fetchProduct(product.id) }} href="#/product"><img src={product.image} alt={product.title} /></a>
+                          <img src={product.image} alt={product.title} onClick={() => { navigate("product/" + product.id) }} />
                         </div>
-                        <a className="prod-title" onClick={() => { fetchProduct(product.id) }} href="#/product">{product.title}</a>
+                        <span className="prod-title" onClick={() => { navigate("product/" + product.id) }} >{product.title}</span>
                         <span className="prod-price">${product.price}</span>
                         <img className="fav-prod" src={fav} alt="add favorite" />
                       </section>

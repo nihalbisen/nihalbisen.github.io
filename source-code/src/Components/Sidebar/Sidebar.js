@@ -4,7 +4,7 @@ export default function Sidebar(){
             <span className="filter-category">Clothing / Women's / Outerwear</span>
             <span className="filter-head">Filters</span>
             <div className="attribute-sec">
-                <h5 className="attribute-title">Attribute</h5>
+                <h2 className="attribute-title">Attribute</h2>
                 <ul className="filter-option">
                     <li><input type="checkbox" id="option1" name="attribute1" value="option1"/><label htmlFor="option1">Option</label></li>
                     <li><input type="checkbox" id="option2" name="attribute1" value="option1"/><label htmlFor="option2">Option</label></li>
@@ -14,7 +14,7 @@ export default function Sidebar(){
                 <a href="/" className="show-more" aria-label="show-more">Show more</a>
             </div>
             <div className="attribute-sec">
-                <h5 className="attribute-title">Attribute</h5>
+                <h3 className="attribute-title">Attribute</h3>
                 <ul className="filter-option">
                     <li><input type="checkbox" id="option5" name="attribute2" value="option5"/><label htmlFor="option5">Option</label></li>
                     <li><input type="checkbox" id="option6" name="attribute2" value="option6"/><label htmlFor="option6">Option</label></li>
@@ -25,8 +25,8 @@ export default function Sidebar(){
                 <a href="/" className="show-more" aria-label="show-more">Show more</a>
             </div>
             <div className="attribute-sec">
-                <h5 className="attribute-title">Color</h5>
-                <input className="colors colors-black" type="checkbox"  name="black" value="black"/>
+                <h4 className="attribute-title">Color</h4>
+                <input className="colors colors-black" id="black" type="checkbox"  name="black" value="black"/>
                 <input className="colors colors-white" type="checkbox"  name="white" value="white"/>
                 <input className="colors colors-green" type="checkbox"  name="black" value="black"/>
                 <input className="colors colors-orange" type="checkbox"  name="white" value="white"/>
