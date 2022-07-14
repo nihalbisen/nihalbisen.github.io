@@ -15,6 +15,7 @@ export default function Menu(){
               <Route path='cart' element={<Cart />} />
               {/* <Route path='product' element={<SingleProduct />} /> */}
               <Route path='product/:id' element={<SingleProduct/>} />
+              <Route path='cart/product/:id' element={<SingleProduct/>} />
               <Route path='/*' element={<PageNotFound />} />
             </Routes>
           </HashRouter>
