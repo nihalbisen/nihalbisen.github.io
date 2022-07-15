@@ -51,7 +51,7 @@ export default function Cart() {
                 <div className="cart-empty">
                     <p>Your Cart is currently Empty</p>
                     <div className="start-shopping">
-                        <a href="#/home" aria-label="home">
+                        <a href="/" aria-label="home">
                             <img src={arrowleft} alt="arrow left" /> Start Shopping
                         </a>
                     </div>
