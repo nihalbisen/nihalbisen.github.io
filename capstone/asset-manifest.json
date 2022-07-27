@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ffa853f.css",
+    "main.js": "/static/js/main.5d45ceb2.js",
+    "static/js/55.799617e7.chunk.js": "/static/js/55.799617e7.chunk.js",
+    "static/js/784.f2d50369.chunk.js": "/static/js/784.f2d50369.chunk.js",
+    "static/js/99.31aea80f.chunk.js": "/static/js/99.31aea80f.chunk.js",
+    "static/js/367.e69ea5e8.chunk.js": "/static/js/367.e69ea5e8.chunk.js",
+    "static/js/754.420fe0ea.chunk.js": "/static/js/754.420fe0ea.chunk.js",
+    "static/js/787.3ecd7fac.chunk.js": "/static/js/787.3ecd7fac.chunk.js",
+    "static/media/mountain.png": "/static/media/mountain.33999102e9d1828ff8f6.png",
+    "static/media/signatureLegging.png": "/static/media/signatureLegging.3e20a39b3305a47e732b.png",
+    "static/media/hero-banner.png": "/static/media/hero-banner.10c1a916274d28c3008d.png",
+    "static/media/SourceSerifPro-Semibold.otf": "/static/media/SourceSerifPro-Semibold.196dc1893685c2859f0e.otf",
+    "static/media/WomensOuterwear.png": "/static/media/WomensOuterwear.2a282f5db3949ff0e88c.png",
+    "static/media/Muli-Regular.ttf": "/static/media/Muli-Regular.d08337b78196eb4754a0.ttf",
+    "static/media/Muli-Bold.ttf": "/static/media/Muli-Bold.23a4f6051b5d1c12337c.ttf",
+    "static/media/Muli-SemiBold.ttf": "/static/media/Muli-SemiBold.9498c8a5f7e6b141ec11.ttf",
+    "static/media/ShopMen.jpg": "/static/media/ShopMen.3f14b9bd3d076452d15f.jpg",
+    "static/media/Jewellery.jpg": "/static/media/Jewellery.6054ca9658ccc7f4232e.jpg",
+    "static/media/electronics.jpg": "/static/media/electronics.a8fb2045dd1eeb1dc87a.jpg",
+    "static/media/ShopWomen.jpg": "/static/media/ShopWomen.bc5fcfc3900c1c779da5.jpg",
+    "index.html": "/index.html",
+    "static/media/shopping-bag.svg": "/static/media/shopping-bag.b0157b0263004d4fadc2e5c22ab0cf70.svg",
+    "static/media/placeholder-blank.svg": "/static/media/placeholder-blank.5cf1529c31a151df7200.svg",
+    "main.7ffa853f.css.map": "/static/css/main.7ffa853f.css.map",
+    "main.5d45ceb2.js.map": "/static/js/main.5d45ceb2.js.map",
+    "55.799617e7.chunk.js.map": "/static/js/55.799617e7.chunk.js.map",
+    "784.f2d50369.chunk.js.map": "/static/js/784.f2d50369.chunk.js.map",
+    "99.31aea80f.chunk.js.map": "/static/js/99.31aea80f.chunk.js.map",
+    "367.e69ea5e8.chunk.js.map": "/static/js/367.e69ea5e8.chunk.js.map",
+    "754.420fe0ea.chunk.js.map": "/static/js/754.420fe0ea.chunk.js.map",
+    "787.3ecd7fac.chunk.js.map": "/static/js/787.3ecd7fac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ffa853f.css",
+    "static/js/main.5d45ceb2.js"
+  ]
+}
